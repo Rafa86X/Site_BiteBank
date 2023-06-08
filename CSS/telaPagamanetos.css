@@ -1,0 +1,127 @@
+.telapagamentos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.titulo_pagamentos{
+    margin:30px 0 20px 0;
+    font-size: 2rem;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    color: white;
+    border-bottom: 2px solid white;
+    width: 85%;
+}
+
+.caixa_pagamentos{
+    width: 300px;
+    height: 400px;
+    background-color: rgb(40, 4, 56);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subcaixa_codigo,.subaixa_saldo, .subcaixa_valor, .subcaixa_botoes{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: white;
+    width: 90%;
+}
+
+
+
+.subcaixa_valor,.subaixa_saldo,.subcaixa_identificacao{
+    border-bottom: 2px solid white;
+}
+
+.codigo{
+    width: 150px;
+    color: chocolate;
+}
+
+.subcaixa_botoes{
+    margin-top: 5px;
+
+}
+
+.botao_pagamento{
+    width: 120px;
+    height: 50px;
+    border-radius: 20px;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bolder;
+}
+
+.Valor{
+    text-align: end;
+    padding: 2px 10px;
+    font-size: 1rem;
+    width: 55%;
+}
+
+.pagar{
+    background-color: rgb(0, 1, 56);
+}
+
+.cancelar{
+    background-color: rgb(105, 0, 0);
+}
+
+.caixa_pagamento_resultado{
+    padding-top: 20px;
+    width: 400px;
+    height: 180px;
+    background-color: rgb(40, 4, 56);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.textoresultado{
+    text-align: center;
+    padding: 10px;
+    font-size: 2rem;
+    margin: 10px 0;
+    color: white;
+}
+
+.textoresultadoN{
+    text-align: center;
+    padding: 10px;
+    font-size: 1.5rem;
+    margin-bottom: 17px;
+    color: white;
+}
+
+.subcaixa_identificacao{
+    width: 90%;
+    display: flex;
+    margin-top: -5px;
+    margin-bottom: 5px;
+    flex-direction: column;
+    text-align: start;
+    font-size: 1.1rem;
+    color: white;
+    padding-bottom: 10px;
+}
+
+.identificacao_item{
+    margin: 5px 0;
+}
+

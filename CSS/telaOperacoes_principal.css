@@ -1,0 +1,74 @@
+.operacoes{
+    width: 100vw;
+    height: calc(100vh - 80px);
+    background-image: url("../Imagens/bloco3.png"), linear-gradient(rgb(43, 1, 43)40%,rgb(61, 5, 107));
+
+}
+
+.painel_operacoes{  
+    position: absolute;
+    left: 5%;
+    top:100px;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 500px;
+    background-color: rgb(36, 6, 48);
+    border-radius: 20px;
+}
+
+.botoes_abas{
+    display: flex;
+    width: 100%;
+}
+
+.botao{
+    width: 24.9%;
+    height: 50px;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    border-radius: 40px 20px 40px 20px;
+    border-width: 2.5px;
+    color: rgba(42, 2, 80, 0.4);
+    background-color: rgba(210, 227, 235, 0.4);
+}
+
+.ativado{
+    color: rgba(42, 2, 80,1);
+    background-color: rgb(210, 227, 235);
+
+}
+
+.area_trabalho{
+    width: 97%;
+    height: 420px;
+    border: 2px solid white;
+    margin: 10px auto;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.identificacao{
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+    order: -1;
+}
+
+.campo{
+    width: 32%;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: white;
+    background-color: rgb(145, 72, 145);
+    border-radius: 20px;
+    text-align: center;
+    padding-top:10px;
+    padding-bottom: 10px;
+    margin: 0 10px;
+}
+
+.funcao:first-letter 
+{ text-transform: capitalize; }

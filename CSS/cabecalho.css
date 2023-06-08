@@ -1,0 +1,26 @@
+.cabecalho{
+    width: 100vw;
+    height: 80px;
+    background-color: #220031;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecalho_titulo{
+    font-size: 2rem;
+    margin-left: 1rem;
+    color: cornsilk;
+}
+
+.cabecalho_navegacao{
+    display: flex;
+    margin-right: 1rem;
+    color: cornsilk;
+}
+
+.cabecalho_navegacao_link{
+    margin-left: .8rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+}

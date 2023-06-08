@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/reset.css">
+    <link rel="stylesheet" href="../CSS/cabecalho.css">
+    <link rel="stylesheet" href="../CSS/telaOperacoes_principal.css">
+    <link rel="stylesheet" href="../CSS/telaaOperacoes_funcional.css">
+    <link rel="stylesheet" href="../CSS/telaOperacoes_contas.css">
+    <link rel="stylesheet" href="../CSS/telaPagamanetos.css">
+    <link rel="stylesheet" href="../CSS/bancoDeDados.css">
+    <link rel="stylesheet" href="../CSS/telatransferencias.css">
+
+    <title>RafaBanking- Login -</title>
+</head>
+    <body>
+        <header class="cabecalho">
+            <h1 class="cabecalho_titulo">RafaBanking</h1>
+            <nav class="cabecalho_navegacao">
+                <a class="cabecalho_navegacao_link rosa" data-tipo="mostraBancoDados" >Mostra Banco de Dados</a>
+                <a class="cabecalho_navegacao_link" href="../index.html">voltar</a>
+            </nav>
+        </header>
+
+        <section class="operacoes">
+            <div class="painel_operacoes">
+                <div class="botoes_abas" data-tipo="botoes_abas">
+                    <button class="funcional botao ativado" data-tipo="funcional">Funcional</button>
+                    <button class="c_corrente  botao" data-tipo="contas">Suas contas</button>
+                </div>
+                <div class="area_trabalho" data-tipo="area_trabalho">
+
+                </div>
+            </div>
+        </section>
+
+        <section class="telapagamentos desativado" data-tipo="telapagamentos">
+            <div class="caixa_pagamentos desativado" data-tipo="pagamentos">
+                    <div class="titulo_pagamentos" data-tipo="titulo"></div>
+                    <div class="subaixa_saldo">
+                        <div class="saldo_titulo">Seu saldo é:</div>
+                        <div class="saldo" data-tipo="saldo">300,00</div>
+                    </div>
+                    <div class="subcaixa_codigo">
+                        <div class="codigo_titulo">Código:</div>
+                        <div data-tipo="codigo" class="codigo"></div>
+                    </div>
+                    <div class="subcaixa_valor">
+                        <div class="valor_caixa">Valor:</div>
+                        <div class="saldo">R$</div>
+                        <input type="number" data-tipo="valor" placeholder="0,00" class="Valor" required>
+                    </div>
+                    <div class="subcaixa_botoes">
+                        <button id="Pagar" class="botao_pagamento pagar" data-tipo="pagar">Pagar</button>
+                        <button id="Cancelar" class="botao_pagamento cancelar" data-tipo="cancelar">Cancelar</button>
+                    </div>
+            </div>
+
+            <div class="caixa_transferencia_resultado desativado" data-tipo="pagamentoConfirma">
+                <div class="TituloResultadoTransferencia">Confirma Pagamento</div>
+                <div class="textoresultadoTransferencia" data-tipo="valorConfirmacao">De: R$ 1535,00</div>
+                <div class="textoresultadoTransferencia" data-tipo="nomeConfirmacao">Para: Maria Joaquina</div>
+                <div class="subcaixa_botoes">
+                    <button class="botao_Transferir pagar" data-tipo="pagamentoConfirma">Pagar!</button>
+                    <button class="botao_pagamento cancelar" data-tipo="pagamentoCancela">Cancelar</button>
+                </div>
+            </div>  
+
+            <div class="caixa_pagamento_resultado desativado" data-tipo="pagamentook">
+                <div class="textoresultado">Pagamento realizado com sucesso!</div>
+                <button class="botao_pagamento pagar" data-tipo="ok">ok</button>
+            </div>
+
+            <div class="caixa_pagamento_resultado desativado" data-tipo="pagamentoNok">
+                <div class="textoresultadoN" data-tipo="tituloAlertaSaldo">Saldo Insuficiente!</div>
+                <div class="textoresultadoN" data-tipo="tituloAlertaSaldo2">Pagamento NÃO REALIZADO!</div>
+                <button class="botao_pagamento cancelar" data-tipo="Naook">ok</button>
+            </div>
+
+        </section>
+
+
+        <section class="telaTransferencias desativado" data-tipo="telaTransferencias">
+            <div class="caixaTransferencias desativado" data-tipo="caixaTransferencias">
+                <div class="tituloTransferencias">Transferência</div>
+                <div class="subaixa_saldo">
+                    <div class="saldo_titulo">Seu saldo é:</div>
+                    <div class="saldo" data-tipo="saldoT">R$ 300,00</div>
+                </div>
+                <div class="subcaixa_transferencia">
+                    <div class="descrisao_tranferencia" data-tipo="descricaotransfer">De Conta Corrente para conta:</div>
+                    <input type="number" data-tipo="valorT" class="numeroconta" required>
+                </div>
+                <div class="subcaixa_Chek_transfer" data-tipo="subcaixa_Chek_transfer">
+                    <label for="botaoTransfContapoupanca" class="labelChek" data-tipo="labelChek">
+                        <div data-tipo="TransferPara">Para sua Conta Poupança</div>
+                        <input class="checkbox" type="checkbox" id="botaoTransfContapoupanca" data-tipo="botaoTransfConta" >
+                    </label>
+                </div>
+                <div class="subcaixa_botoes">
+                    <button class="botao_pagamento pagar" data-tipo="buscar">Buscar</button>
+                    <button class="botao_pagamento cancelar" data-tipo="cancelarT">Cancelar</button>
+                </div>
+            </div>
+            <div class="caixaTransferencias desativado" data-tipo="telaTransferir">
+                <div class="tituloTransferencias">Transferência</div>
+                <div class="subaixa_saldo">
+                    <div class="saldo_titulo">Seu saldo é:</div>
+                    <div class="saldo" data-tipo="saldoTransferir">R$ 300,00</div>
+                </div>
+                <div class="subcaixa_identificacao">
+                    <div class="identificacao_item" data-tipo="transferirConta">Conta: 43244545435</div>
+                    <div class="identificacao_item" data-tipo="transferirNome">Nome: Catita Terorista da Silva</div>
+                    <div class="identificacao_item" data-tipo="transferirCPF">CPF: 43244545435 </div>
+                </div>
+                <div class="subcaixa_valor_transfere">
+                    <div class="descrisao_tranferencia">Valor:</div>
+                    <div class="descrisao_tranferencia">R$</div>
+                    <input type="number" data-tipo="valor_transfere" placeholder="0,00" class="valor_transfere" required>
+                </div>
+                <div class="subcaixa_botoes">
+                    <button class="botao_Transferir pagar" data-tipo="transferirOK">TRANSFERIR!</button>
+                    <button class="botao_pagamento cancelar" data-tipo="cancelarTT">Cancelar</button>
+                </div>
+            </div>
+
+            <div class="caixa_transferencia_resultado desativado" data-tipo="transferenciaConfirma">
+                <div class="TituloResultadoTransferencia">Confirma a Transferência</div>
+                <div class="textoresultadoTransferencia" data-tipo="valorConfirmTrnasferencia">Valor: R$ 1535,00</div>
+                <div class="textoresultadoTransferencia" data-tipo="nomeConfirmTrnasferencia">Para: Maria Joaquina</div>
+                <div class="subcaixa_botoes">
+                    <button class="botao_Transferir pagar" data-tipo="transferirConfirma">TRANSFERIR!</button>
+                    <button class="botao_pagamento cancelar" data-tipo="cancelarTransferencias">Cancelar</button>
+                </div>
+            </div>      
+        </section>
+
+        <section class="bancoDeDados desativado" data-tipo="bancoDeDados">
+            <button class="bancoDeDadosConteudo" data-tipo="botaosairBancoDados">Voltar!</button>
+            <div data-tipo="bancoDeDadosConteudo"></div>
+        </section>
+
+        <script type='module' src='../servisos/opercaoes_principal.js'></script>         
+        <script type='module' src='../servisos/mostraBancoDeDados.js'></script>
+  
+    </body>   
+</html>

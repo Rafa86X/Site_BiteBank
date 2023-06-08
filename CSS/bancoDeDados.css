@@ -1,0 +1,67 @@
+.bancoDeDados{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 2500px;
+    background-image: url("../Imagens/bloco3.png"), linear-gradient(rgba(43, 1, 43, 0.849)40%,rgba(61, 5, 107, 0.836));
+    padding-top: 20px;
+}
+.info_cliente{
+    user-select:text;
+    margin-bottom: 20px;
+    width: 400px;
+    height: 360px;
+    border: 5px solid royalblue;
+    border-radius: 20px;
+    color: white;
+    background-color: rgb(29, 3, 27);
+    font-size: 1.4rem;
+    padding-top: 20px;
+   }
+
+.campoBancoDeDados{
+    user-select:text;
+    width: 80%;
+    display: flex;
+    margin: 5px;
+    padding: 5px;
+}
+
+.campoChave{
+    user-select:text;
+    margin: 0 7px;
+}
+
+.campoValor{
+    user-select:text;
+    vertical-align: text-bottom;
+}
+
+.bancoDeDadosConteudo{
+    user-select:text;
+    position: absolute;
+    top: 0;
+    left: 880px;
+    width: 150px;
+    height: 80px;
+    margin: 30px;
+    border-width: 2px;
+    background-color: rgb(247, 78, 11);
+    font-size: 2rem;
+    color: white;
+    font-weight: bolder;
+    border-radius: 30px;
+}
+
+.rosa{
+    color: palevioletred;
+    cursor: pointer;
+}
+
+.desativado{
+    display: none;
+}

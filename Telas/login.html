@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/reset.css">
+    <link rel="stylesheet" href="../CSS/cabecalho.css">
+    <link rel="stylesheet" href="../CSS/login.css">
+    <link rel="stylesheet" href="../CSS/bancoDeDados.css">
+
+
+    <title>RafaBanking- Login -</title>
+</head>
+    <body>
+        <header class="cabecalho">
+            <h1 class="cabecalho_titulo">RafaBanking</h1>
+            <nav class="cabecalho_navegacao">
+                <a class="cabecalho_navegacao_link rosa" data-tipo="mostraBancoDados" >Mostra Banco de Dados</a>
+                <a class="cabecalho_navegacao_link" href="./login.html">voltar</a>
+            </nav>
+        </header>
+        <section class="login">
+            <div class="caixalogin_colab" data-tipo="acessoColab">
+                <form action="" class="formulario" id="formulario">
+                    <label for="nome" class="campo campo_nome">
+                        <div>Nome:</div>
+                        <input type="text" id="nome" data-tipo="nome" placeholder="Joao da Silva" required>
+                    </label>
+                    <label for="password" class="campo campo_senha">
+                        <div>Senha:</div>
+                        <input  data-tipo="senha" type="password" id="password" placeholder="********" required>
+                    </label>
+                    <div class="botoes">
+                        <button  class="botao entrar" data-tipo="entrar">Entrar</button>
+                        <button  class="botao sair" data-tipo="sair">Sair</button>
+                    </div>
+                </form>
+            </div>
+            <div class="loginFalhou desativa" data-tipo="acessoColabFalhou">
+                <form action="" class="formulario" data-tipo="formularioLoguin">
+                    <div class="loginFalhouMensagem">Nome ou senha incorretos, tente novamente.</div>
+                    <div class="botoes">
+                        <button  class="botao sair" data-tipo="voltar">Voltar</button>
+                    </div>
+                </form>
+            </div>
+
+        </section>
+
+        <section class="bancoDeDados desativado" data-tipo="bancoDeDados">
+            <button class="bancoDeDadosConteudo" data-tipo="botaosairBancoDados">Voltar!</button>
+            <div data-tipo="bancoDeDadosConteudo"></div>
+        </section>
+
+        <script type='module' src='../servisos/login.js'></script>
+        <script type='module' src='../servisos/mostraBancoDeDados.js'></script>
+   
+    </body>   
+</html>

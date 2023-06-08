@@ -1,0 +1,149 @@
+.telaTransferencias{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.tituloTransferencias{
+    margin:20px 0 20px 0;
+    font-size: 2rem;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    color: white;
+    border-bottom: 2px solid white;
+    width: 85%;
+}
+
+.caixaTransferencias{
+    width: 300px;
+    height: 400px;
+    background-color: rgb(40, 4, 56);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subcaixa_transferencia{
+    font-size: 1.2rem;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    color: white;
+    width: 95%;
+    text-align: center;
+}
+
+.descrisao_tranferencia{
+    margin: 10px 0;
+}
+
+.numeroconta{
+    height: 30px;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.textoresultado{
+    text-align: center;
+    padding: 10px;
+    font-size: 2rem;
+    margin: 10px 0;
+    color: white;
+}
+
+
+.botao_Transferir{
+    width: 145px;
+    height: 50px;
+    border-radius: 20px;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bolder;
+}
+
+.subcaixa_valor_transfere{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: white;
+    width: 90%;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.valor_transfere{
+    width: 60%;
+    margin: 5px 5px 5px 10px;
+    text-align: end;
+}
+
+
+.caixa_transferencia_resultado{
+    padding-top: 20px;
+    width: 400px;
+    height: 300px;
+    background-color: rgb(40, 4, 56);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.TituloResultadoTransferencia{
+  color: white;
+  padding: 10px;
+  margin: 5px 0;
+  font-size: 2rem;
+  border-bottom: white 2px solid;
+}
+
+.textoresultadoTransferencia{
+    width: 90%;
+    text-align: start;
+    padding: 10px 0;
+    margin: 10px 0;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.subcaixa_Chek_transfer{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    color: white;
+    width: 90%;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    color: rgb(32, 243, 243);
+}
+
+.labelChek{
+    display: flex;
+    width: 80%;
+}
+
+.checkbox{
+    width: 20px;
+    height: 20px;
+    margin-top:10px ;
+}
+
+.desativado{
+    display: none;
+}
+
+
+

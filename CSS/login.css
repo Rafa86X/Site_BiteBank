@@ -1,0 +1,129 @@
+.login{
+    width: 100vw;
+    height: calc(100vh - 80px);
+    background-image: url("../Imagens/bloco3.png"), linear-gradient(rgb(43, 1, 43)40%,rgb(61, 5, 107));
+
+}
+
+.caixalogin, .caixalogin_colab, .loginFalhou{  
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(calc(50% - 500px),calc(50% - 195px));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 500px;
+    height: 195px;
+    background-color: rgb(36, 6, 48);
+    border-radius: 20px;
+}
+
+.caixalogin_titulo{
+    font-size: 2.2rem;
+    font-weight: bold;
+    width: 98%;
+    text-align: center;
+    padding: 20px 0;
+    margin: 10px auto;
+    color: white;
+    border: 2px solid rgb(146, 31, 212);
+    border-radius: 20px;
+    background-color: rgb(86, 51, 119);
+}
+
+.caixalogin_tipoacesso{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.botao_acesso{
+    font-size: 1.7rem;
+    font-weight: bold;
+    width: 48%;
+    text-align: center;
+    padding: 20px 0;
+    color: white;
+    border-radius: 20px;
+}
+
+.colab{
+    background-color: rgb(8, 92, 22);
+}
+
+.cliente{
+    background-color: rgb(8, 86, 92);
+}
+
+.desativa{
+    opacity: 0;
+    z-index: -1;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 95%;
+}
+
+.campo{
+    display: flex;
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    padding: 10px 0 10px 15px; 
+    border-radius: 10px; 
+    width: 92%;
+    font-weight: bolder;
+}
+
+.campo_nome{
+    background-color: rgb(195, 43, 226);
+}
+.campo_senha{
+    background-color: rgb(226, 43, 180);
+}
+.campo div{
+    margin-right: 10px;
+}
+.campo input{
+    font-size: 1rem;
+    width: 75%;
+    padding: 5px 0 5px 10px;
+    border-radius: 5px;
+}
+
+.botoes{
+    width: 95%;
+    display: flex;
+    justify-content: flex-end;
+}
+.botao{
+    width: 25%;
+    height: 50px;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    color: cornsilk;
+    border-radius: 20px;
+}
+
+.entrar{
+    background-color: rgb(6, 43, 6);
+}
+
+.sair{
+    background-color: darkred;
+    margin-left: 10px;
+}
+
+.loginFalhouMensagem{
+    color: red;
+    background-color: yellow;
+    font-size: 1.5rem;
+    padding: 20px 0 20px 15px; 
+    border-radius: 10px; 
+    width: 92%;
+    font-weight: bolder;
+    border: 2px solid rgb(78, 78, 6);
+}
