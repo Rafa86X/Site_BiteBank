@@ -2,7 +2,6 @@ import {clienteLogado, aplicavalorMoeda,formataConta,contaSelecionada} from './o
 import {transacaoNAOrealizadaDigitacao,transacaoNAOrealizada,transacaoREALIZADA} from './operacoes_contas_pagamentos.js'
 import {formataCPF} from './opercaoes_principal.js'
 import {exec_transfer_ContaCorrente} from './exec_Transferencias_ContCorrente.js'
-import {exec_transfer_ContaPoupanca} from './exec_Transferencias_contaPoupanca.js'
 import {motorBusca,clienteReceberTransferencia} from './motorBuscaTransfer.js'
 
 const contaDigitada = document.querySelector('[data-tipo = "valorT"]')
